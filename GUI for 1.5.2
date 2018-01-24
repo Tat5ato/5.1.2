@@ -1,0 +1,50 @@
+
+from tkinter import*
+
+window = Tk()
+
+window.title("GUI")
+
+window.geometry('1920x1080')
+
+lbl = Label(window, text="Ball speed")
+
+lbl.grid(column=0, row=0)
+
+lbl2 = Label(window, text="Ball size")
+
+lbl2.grid(column=4, row=5)
+
+lbl3 = Label(window, text="Paddle Size")
+
+lbl3.grid(column=6, row=5)
+
+lbl4 = Label(window, text="Paddle Speed")
+
+lbl4.grid(column=4, row=6)
+
+btn2 = Button(window, text="Confirm")
+
+btn2.grid(column=4, row=2)
+
+btn = Button(window, text="Reset")
+
+btn.grid(column=3, row=3)
+
+w = Scale(window, from_=0, to=100, orient=HORIZONTAL)
+
+w.grid(column=4, row=4)
+
+w2 = Scale(window, from_=0, to=100, orient=HORIZONTAL)
+
+w2.grid(column=4, row=7)
+
+w3 = Scale(window, from_=0, to=100, orient=HORIZONTAL)
+
+w3.grid(column=3, row=4)
+
+w4 = Scale(window, from_=0, to=100, orient=HORIZONTAL)
+
+w4.grid(column=5, row=4)
+
+window.mainloop()
